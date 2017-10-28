@@ -11,5 +11,5 @@ clean:	stop
 clean-data: clean
 	@docker-compose -p jenkins2 rm -v data
 clean-images:
-	@docker rmi `docker images -q -f "dangling=true"`
+	@docker image prune -af
 
