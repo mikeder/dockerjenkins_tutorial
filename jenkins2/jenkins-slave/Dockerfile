@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Mike Eder
+MAINTAINER Maxfield Stewart
 
 ARG install_packages="git wget openssh-server java-1.8.0-openjdk sudo yum-utils device-mapper-persistent-data lvm2"
 ARG docker_repo="https://download.docker.com/linux/centos/docker-ce.repo"
