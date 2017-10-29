@@ -4,7 +4,10 @@ http://engineering.riotgames.com/news/building-jenkins-inside-ephemeral-docker-c
 
 There several key changes however that won't match that blog. Namely:
 
-1. This uses Jenkins 2.58
+1. This uses Jenkins 2.73.2
+1. The slave image in this example requires a `host_docker_group` build arg. This 
+should be the group id of the `docker` group on the host. This enables "DIND" - Docker in Docker slaves.
+ (See `setdockergroup.sh` for how to get the id, alternatively run `source setdockergroup.sh` before running make commands)
 2. This uses the updated "Yet Another Docker Plugin" not the older "Docker Plugin"
   1. In particular how you configure ssl certs to talk to your local docker toolbox has changed
   2. You no longer need to generate an ssh-key pair, the YADP uses JNLP to connect slaves, not SSH

@@ -4,7 +4,7 @@ MAINTAINER Maxfield Stewart
 ARG install_packages="git wget openssh-server java-1.8.0-openjdk sudo yum-utils device-mapper-persistent-data lvm2"
 ARG docker_repo="https://download.docker.com/linux/centos/docker-ce.repo"
 ARG host_docker_group=998
-ARG host_docker_version="17.09"
+ARG host_docker_version=17.09
 
 # Install Packages
 RUN yum -v -y install $install_packages \
