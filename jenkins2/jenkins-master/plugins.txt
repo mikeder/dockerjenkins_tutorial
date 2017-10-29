@@ -20,6 +20,7 @@ git-server 1.7
 github 1.28.1
 github-api 1.89
 github-branch-source 2.2.4
+github-oauth 0.27
 github-organization-folder 1.6
 groovy 2.0
 handlebars 1.1.1
